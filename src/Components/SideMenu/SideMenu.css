@@ -1,0 +1,83 @@
+.sidemenu {
+    min-width: 60px;
+    height: 100%;
+    background-color: var(--sidebar-background);
+    color: var(--header-icon-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+}
+
+/* Icons containers */
+/* Top Container */
+.status-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 40px;
+    gap: 8px;
+}
+
+.status-button-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.selected-status {
+    background-color: var(--sidebar-icons-selected-background-color);
+}
+
+.status-button {
+    width: 24px;
+    height: 24px;
+    color: var(--header-icon-color);
+}
+
+/* Unread Messages number */
+.sidebar-unread-messages {
+    background-color: var(--chip-font-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 13px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #111B21;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Unseen Status Dot */
+.sidebar-unseen-status{
+    background-color: var(--chip-font-color);
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    position: absolute;
+    right: 3px;
+    top: 0px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #111B21;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Bottom Container */
+.account-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 24px;
+}

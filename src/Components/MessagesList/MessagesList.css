@@ -1,0 +1,40 @@
+.messageslist {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://wallpapercave.com/wp/wp6559609.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-messages-container {
+    width: 100%;
+    height: calc(100% - 124px);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px 72px;
+    overflow-y: auto;
+    scrollbar-color: var(--sidebar-background) var(--contacts-background);
+    scrollbar-width: thin;
+}
+
+@media (max-width: 1400px) {
+    .chat-messages-container {
+        height: 100%;
+        padding: 8px 20px;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 900px) {
+    .chat-messages-container {
+        height: 100%;
+        padding: 8px;
+        gap: 3px;
+        scrollbar-width: none;
+    }
+}

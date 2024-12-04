@@ -1,0 +1,75 @@
+.mobile-chat-footer {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    color: var(--search-bar-icon-color);
+    margin-bottom: 2px;
+    gap: 3px;
+}
+
+.mobile-chat-footer .chat-form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-emoji {
+    position: absolute;
+    left: 8px;
+}
+
+.mobile-chat-input {
+    height: 100%;
+    width: 100%;
+    line-height: 22px;
+    font-size: 14px;
+    background-color: var(--input-background);
+    border-radius: 50px;
+    padding: 8px 64px 8px 35px;
+    border: 1px solid transparent;
+    outline: none;
+    color: var(--sidebar-icons-color);
+}
+
+.input-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    right: 8px;
+}
+
+.chat-form svg {
+    width: 22px;
+    height: 22px;
+}
+
+.chat-form input[type="text"]::placeholder {
+    color: var(--search-bar-icon-color);
+}
+
+input[type="text"]:focus::placeholder {
+    color: transparent;
+}
+
+.mobile-submit-btn {
+    background-color: var(--chip-font-color);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-submit-btn svg {
+    width: 22px;
+    height: 22px;
+    transition: all 0.5s ease-in-out
+}

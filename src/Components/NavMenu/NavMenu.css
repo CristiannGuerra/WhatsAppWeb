@@ -1,0 +1,47 @@
+.nav-menu {
+    color: var(--sidebar-icons-color);
+    background-color: var(--contacts-background);
+    height: 64px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px 12px 0px 12px;
+    position: sticky;
+    bottom: 0px;
+}
+
+.nav-menu div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
+.nav-menu .img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 12px;
+    border-radius: 100px;
+}
+
+.btn-selected {
+    background-color: var(--chip-background-color);
+}
+
+.btn-selected-text {
+    font-weight: 600;
+}
+
+.nav-menu svg {
+    width: 24px;
+    height: 24px;
+}
+
+.nav-menu span {
+    font-size: 14px;
+    line-height: 20px;
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+* {
+  /* Normalize */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* Font */
+  font-family: "Red Hat Text", sans-serif;
+}
+
+:root {
+  /* Sidebar Colors */
+  --sidebar-background: #222E35;/* #222E35 2a3942*/
+  --sidebar-icons-color: #E9EDEF; /* #2A3942 */
+  --sidebar-icons-selected-background-color: #364147;
+  --input-background: #2A3942;
+  --sidebar-icon-background: #374248;
+
+  /* Cover */
+  --cover-btn-color: #00ab82;
+  --encrypted-msg-color: #667781;
+
+  /* Header */
+  --header-icon-color: #AEBAC1;
+  --search-bar-icon-color: #8696A0;
+
+  /* Chips */
+  --chip-background-color: #0A332C;
+  --chip-font-color: #00A884;
+
+  /* Chats */
+  --chat-border-color: #222D34;
+
+  /* Chats Header Videocamera */
+  --videocamera-color: #4C5C66;
+
+  /* Messages */
+  --contacts-background: #111B21;
+  --message-background: #202c33;
+  --sent-message-background: #005c4b;
+  --message-text-color: #ffffff;
+  --time-text-color: #87959e;
+  --read-check-color: #53bdeb;
+  --contact-name-color: #ffffff;
+
+  /* Hovers */
+  --messages-hover-color: #383838;
+  --btn-get-hover-color: #06CF9C;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  -webkit-user-select: none;  /* Safari */
+  -moz-user-select: none;     /* Firefox */
+  -ms-user-select: none;      /* IE10+ */
+  user-select: none;         /* Standard syntax */
+}
+
+.verified-profile {
+  width: 20px;
+  height: 20px;
+  color: var(--read-check-color);
+}
