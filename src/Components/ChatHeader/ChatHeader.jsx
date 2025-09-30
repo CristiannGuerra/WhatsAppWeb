@@ -1,6 +1,6 @@
 import React from 'react'
 import './ChatHeader.css'
-import { MdVerified, MdOutlineKeyboardArrowDown, MdOutlineEmojiEmotions } from "react-icons/md"; /* => Verified Profile IMG */
+import { MdVerified, MdOutlineKeyboardArrowDown } from "react-icons/md"; /* => Verified Profile IMG */
 import { HiDotsVertical, HiSearch } from "react-icons/hi"; /* => Nav Btn IMG */
 import { HiMiniVideoCamera } from "react-icons/hi2"; /* => VideoCamera IMG */
 

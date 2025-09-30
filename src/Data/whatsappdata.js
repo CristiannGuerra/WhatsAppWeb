@@ -2,11 +2,11 @@ const contacts = [
     {
         id: 1,
         nombre: 'Pedro',
-        profilePicture: "https://www.fakepersongenerator.com/Face/male/male1085249812896.jpg",
+        profilePicture: "../assets/avatars/avatar-1.jpg",
         isVerified: true,
         isBusinessAcc: false,
         isFav: false,
-        isGroup: true,
+        isGroup: false,
         mensajes: [
             {
                 emisor: 'YO',
@@ -206,7 +206,7 @@ const contacts = [
         isVerified: true,
         isBusinessAcc: true,
         isFav: true,
-        isGroup: false,
+        isGroup: true,
         mensajes: [
             { emisor: 'YO', hora: '13:00', id: 1, texto: 'Hola, hice un pedido hace una hora y todavía no ha llegado', status: 'visto' },
             { emisor: 'USUARIO', hora: '13:05', id: 2, texto: 'Lo sentimos mucho por la demora. ¿Podría por favor facilitarnos el número de pedido?', status: 'visto' },

@@ -1,29 +1,42 @@
 import React, { useContext } from 'react'
 import './MobileChatHeader.css'
 import { ContactsContext } from '../../Context/ContactsContext'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
+
+import { MdVerified } from "react-icons/md"; /* => Verified Profile IMG */
+import { HiDotsVertical } from "react-icons/hi"; /* => Nav Btn IMG */
+import { HiMiniVideoCamera } from "react-icons/hi2"; /* => VideoCamera IMG */
+import { IoCallOutline } from 'react-icons/io5';
+import { MdArrowBack } from 'react-icons/md';
 
 const MobileChatHeader = () => {
   const { getContactById } = useContext(ContactsContext)
   const { contact_id } = useParams()
   const contactFound = getContactById(contact_id)
 
-  const {nombre, profilePicture} = contactFound
+  const { nombre, profilePicture } = contactFound
 
-  
+  const navigate = useNavigate()
+
+  const handleGoBack = () => {
+    navigate('/')
+  }
+
+  console.log(profilePicture)
+
 
   return (
     <div className='mobile-chat-header'>
-      <div className='back-button'>back</div>
+      <MdArrowBack onClick={handleGoBack} />
       <div className='user-info'>
         <div className='user-avatar-and-name'>
-          <img srcSet={profilePicture} alt="" className='user-avatar' />
+          <img srcSet={profilePicture} alt="IMG" className='user-avatar' />
           <div className='user-username'>{nombre}</div>
         </div>
         <div className='user-actions'>
-          <div className='videocall'>camera</div>
-          <div className='phonecall'>call</div>
-          <div className='settings'>dots</div>
+          <HiMiniVideoCamera />
+          <IoCallOutline />
+          <HiDotsVertical />
         </div>
       </div>
     </div>
