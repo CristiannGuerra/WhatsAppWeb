@@ -1,8 +1,10 @@
+import avatar from '../assets/avatars/avatar-1.jpg'
+
 const contacts = [
     {
         id: 1,
         nombre: 'Pedro',
-        profilePicture: "src/assets/avatars/avatar-1.jpg",
+        profilePicture: avatar,
         isVerified: true,
         isBusinessAcc: false,
         isFav: false,
