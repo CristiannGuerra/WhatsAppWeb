@@ -36,6 +36,8 @@
     border-top: 1px solid var(--chat-border-color);
     border-bottom: 1px solid var(--chat-border-color);
     padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Chat Top */
@@ -45,6 +47,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Chat Title Wrapper */
@@ -54,11 +58,16 @@
     justify-content: space-between;
     align-items: center;
     gap: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .chat-title {
     font-size: 17px;
     color: var(--sidebar-icons-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .chat-time {
@@ -89,6 +98,7 @@
     height: 22px;
     width: 100%;
     color: var(--search-bar-icon-color);
-    overflow-y: hidden;
+    overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }

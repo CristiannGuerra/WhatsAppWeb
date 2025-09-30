@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './ChatsList.css'
 import Chat from '../Chat/Chat'
 import { HiDotsVertical, HiSearch } from "react-icons/hi";
@@ -6,7 +6,6 @@ import { LuMessageSquarePlus } from "react-icons/lu";
 import { MdOutlineArchive } from "react-icons/md";
 import { ContactsContext } from '../../Context/ContactsContext';
 import { useMediaQuery } from 'react-responsive';
-import NavMenu from '../NavMenu/NavMenu';
 
 
 
@@ -16,8 +15,43 @@ const ChatsList = ({ style }) => {
 
   const { contactsData } = useContext(ContactsContext)
 
+  const [filter, setFilter] = useState("all")
 
-  let chatJSX = contactsData.map(
+  const handleToggleFavorites = () => {
+    setFilter("favorites")
+  }
+
+  const handleToggleUnread = () => {
+    setFilter("unread")
+  }
+
+  const handleToggleGroups = () => {
+    setFilter("groups")
+  }
+
+  const handleToggleAll = () => {
+    setFilter("all")
+  }
+
+  const filterContacts = (contacts, filter) => {
+    switch (filter) {
+      case 'favorites':
+        return contacts.filter((contact) => contact.isFav)
+      case 'groups':
+        return contacts.filter((contact) => contact.isGroup)
+      case 'unread':
+        return contacts.filter((contact) => {
+          return contact.mensajes.some((mensaje) => { return mensaje.status === 'no-visto' && mensaje.emisor !== 'YO' })
+        })
+      default:
+        return contacts
+    }
+  }
+
+  const filteredContacts = filterContacts(contactsData, filter)
+
+
+  let chatJSX = filteredContacts.map(
     (chat, index) => {
       let lastMessage = chat.mensajes[chat.mensajes.length - 1]
 
@@ -51,10 +85,10 @@ const ChatsList = ({ style }) => {
         </div>
         {/* Chips */}
         <div className='chips-container'>
-          <span className='chip active-chip'>All</span>
-          <span className='chip'>Unread</span>
-          <span className="chip">Favorites</span>
-          <span className='chip'>Groups</span>
+          <span className={`chip ${filter === 'all' ? 'active-chip' : ''}`} onClick={handleToggleAll}>All</span>
+          <span className={`chip ${filter === 'unread' ? 'active-chip' : ''}`} onClick={handleToggleUnread}>Unread</span>
+          <span className={`chip ${filter === 'favorites' ? 'active-chip' : ''}`} onClick={handleToggleFavorites}>Favorites</span>
+          <span className={`chip ${filter === 'groups' ? 'active-chip' : ''}`} onClick={handleToggleGroups} >Groups</span>
         </div>
         {/* Archive btn */}
         <button className='btn-archived'>

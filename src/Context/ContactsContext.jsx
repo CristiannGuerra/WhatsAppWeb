@@ -62,6 +62,7 @@ const ContactsProvider = ({ children }) => {
         <ContactsContext.Provider value={
             {
                 contactsData: contactsData,
+                setContactData: setContactData,
                 getContactById: getContactById,
                 addNewMessageToContact: addNewMessageToContact
             }

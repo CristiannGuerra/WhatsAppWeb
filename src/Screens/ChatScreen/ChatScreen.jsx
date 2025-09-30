@@ -9,6 +9,7 @@ import ChatFooter from '../../Components/ChatFooter/ChatFooter'
 import coverImg from '../../public/assets/WhatsApp-cover-img.png'
 import { useMediaQuery } from 'react-responsive';
 import MobileChatFooter from '../../Components/MobileChatFooter/MobileChatFooter';
+import MobileChatHeader from '../../Components/MobileChatHeader/MobileChatHeader';
 
 
 const ChatScreen = () => {
@@ -41,7 +42,7 @@ const ChatScreen = () => {
           </div>
           :
           <div className='messageslist'>
-            <ChatHeader ContactData={contactChat} />
+            {isTabletOrMobile ? <MobileChatHeader /> : <ChatHeader ContactData={contactChat} />}
             <MessagesList messages={contactChat.mensajes} />
             {isTabletOrMobile ? <MobileChatFooter /> : <ChatFooter />}
           </div>

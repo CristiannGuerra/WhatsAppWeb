@@ -5,6 +5,8 @@ const contacts = [
         profilePicture: "https://www.fakepersongenerator.com/Face/male/male1085249812896.jpg",
         isVerified: true,
         isBusinessAcc: false,
+        isFav: false,
+        isGroup: true,
         mensajes: [
             {
                 emisor: 'YO',
@@ -49,6 +51,8 @@ const contacts = [
         profilePicture: "https://www.fakepersongenerator.com/Face/female/female20131023546764404.jpg",
         isVerified: false,
         isBusinessAcc: true,
+        isFav: true,
+        isGroup: false,
         mensajes: [
             {
                 emisor: 'YO',
@@ -87,6 +91,8 @@ const contacts = [
         profilePicture: "https://www.fakepersongenerator.com/Face/female/female1021912412262.jpg",
         isVerified: true,
         isBusinessAcc: false,
+        isFav: false,
+        isGroup: false,
         mensajes: [
             { emisor: 'YO', hora: '15:00', id: 1, texto: '¿Qué haces este fin de semana?', status: 'visto' },
             { emisor: 'USUARIO', hora: '15:02', id: 2, texto: 'No sé, ¿tú tienes algo en mente?', status: 'visto' },
@@ -101,12 +107,15 @@ const contacts = [
         profilePicture: "https://www.fakepersongenerator.com/Face/female/female20061023270372528.jpg",
         isVerified: false,
         isBusinessAcc: true,
+        isFav: false,
+        isGroup: false,
         mensajes: [
             { emisor: 'YO', hora: '10:30', id: 1, texto: 'Hola, tengo un problema con mi computadora', status: 'visto' },
             { emisor: 'USUARIO', hora: '10:35', id: 2, texto: '¿Qué está pasando exactamente?', status: 'visto' },
             { emisor: 'YO', hora: '10:37', id: 3, texto: 'Se me congela al abrir ciertos programas', status: 'visto' },
             { emisor: 'USUARIO', hora: '10:40', id: 4, texto: '¿Has intentado reiniciarla?', status: 'visto' },
-            { emisor: 'YO', hora: '10:42', id: 5, texto: 'Sí, pero sigue igual', status: 'no-visto' }
+            { emisor: 'YO', hora: '10:42', id: 5, texto: 'Sí, pero sigue igual', status: 'no-visto' },
+            { emisor: 'USUARIO', hora: '10:43', id: 5, texto: 'Emmmmm, bueno... suerte!', status: 'no-visto' },
         ]
     },
     //Planes para el fin de semana
@@ -116,6 +125,8 @@ const contacts = [
         profilePicture: "https://www.fakepersongenerator.com/Face/male/male1085780939453.jpg",
         isVerified: true,
         isBusinessAcc: false,
+        isFav: true,
+        isGroup: false,
         mensajes: [
             { emisor: 'YO', hora: '15:00', id: 1, texto: '¿Qué haces este fin de semana?', status: 'visto' },
             { emisor: 'USUARIO', hora: '15:02', id: 2, texto: 'No sé, ¿tú tienes algo en mente?', status: 'visto' },
@@ -130,6 +141,8 @@ const contacts = [
         profilePicture: "https://www.fakepersongenerator.com/Face/female/female20151024468249970.jpg",
         isVerified: false,
         isBusinessAcc: true,
+        isFav: false,
+        isGroup: false,
         mensajes: [
             { emisor: 'YO', hora: '10:30', id: 1, texto: 'Hola, tengo un problema con mi computadora', status: 'visto' },
             { emisor: 'USUARIO', hora: '10:35', id: 2, texto: '¿Qué está pasando exactamente?', status: 'visto' },
@@ -144,6 +157,8 @@ const contacts = [
         profilePicture: "https://www.fakepersongenerator.com/Face/male/male1085490227112.jpg",
         isVerified: false,
         isBusinessAcc: false,
+        isFav: false,
+        isGroup: false,
         mensajes: [
             { emisor: 'YO', hora: '19:00', id: 1, texto: '¿Conoces algún restaurante bueno cerca de aquí?', status: 'visto' },
             { emisor: 'USUARIO', hora: '19:02', id: 2, texto: 'Depende de qué tipo de comida te apetezca, ¿qué te gustaría probar?', status: 'visto' },
@@ -157,6 +172,7 @@ const contacts = [
         profilePicture: "https://www.fakepersongenerator.com/Face/female/female20121023474609375.jpg",
         isVerified: true,
         isBusinessAcc: false,
+        isGroup: false,
         mensajes: [
             { emisor: 'YO', hora: '14:30', id: 1, texto: 'Hola, hice un pedido ayer y aún no lo he recibido', status: 'visto' },
             { emisor: 'USUARIO', hora: '14:35', id: 2, texto: 'Lo siento mucho por las molestias. ¿Podrías por favor facilitarme el número de pedido?', status: 'visto' },
@@ -170,6 +186,8 @@ const contacts = [
         profilePicture: "https://www.fakepersongenerator.com/Face/female/female20171026069623688.jpg",
         isVerified: false,
         isBusinessAcc: false,
+        isFav: true,
+        isGroup: false,
         mensajes: [
             { emisor: 'YO', hora: '20:00', id: 1, texto: '¡Hola Marta! ¿Ya tienes pensado dónde quieres ir de vacaciones este año?', status: 'visto' },
             { emisor: 'USUARIO', hora: '20:05', id: 2, texto: '¡Hola! La verdad es que estoy entre la playa y la montaña. ¿Y tú?', status: 'visto' },
@@ -187,6 +205,8 @@ const contacts = [
         profilePicture: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.dexerto.com%2Fcdn-image%2Fwp-content%2Fuploads%2F2024%2F02%2F22%2FWcDonalds-2-1024x576.jpg%3Fwidth%3D3840%26quality%3D75%26format%3Dauto&f=1&nofb=1&ipt=8c64c51cf15fa40c94242b748ea72647d96b9707e640309106193f16f91b9764&ipo=images",
         isVerified: true,
         isBusinessAcc: true,
+        isFav: true,
+        isGroup: false,
         mensajes: [
             { emisor: 'YO', hora: '13:00', id: 1, texto: 'Hola, hice un pedido hace una hora y todavía no ha llegado', status: 'visto' },
             { emisor: 'USUARIO', hora: '13:05', id: 2, texto: 'Lo sentimos mucho por la demora. ¿Podría por favor facilitarnos el número de pedido?', status: 'visto' },
@@ -203,6 +223,8 @@ const contacts = [
         profilePicture: "https://www.fakepersongenerator.com/Face/male/male1085828811035.jpg",
         isVerified: false,
         isBusinessAcc: false,
+        isFav: false,
+        isGroup: false,
         mensajes: [
             { emisor: 'YO', hora: '22:00', id: 1, texto: 'Che, ¿viste cómo está el laburo? ¡Una cagada!', status: 'visto' },
             { emisor: 'USUARIO', hora: '22:02', id: 2, texto: '¡Ni me digas! Yo ya estoy re podrido. ¿Y vos, qué onda con la mina nueva?', status: 'visto' },
