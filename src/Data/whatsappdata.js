@@ -1,4 +1,4 @@
-import avatar from '../assets/avatars/avatar-1.jpg'
+import { avatar, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, avatar8, avatar9, avatar10, avatarWc } from '../assets/index.js'
 
 const contacts = [
     {
@@ -50,7 +50,7 @@ const contacts = [
     {
         id: 2,
         nombre: 'Maria R Lewis',
-        profilePicture: "src/assets/avatars/avatar-2.jpg",
+        profilePicture: avatar2,
         isVerified: false,
         isBusinessAcc: true,
         isFav: true,
@@ -90,7 +90,7 @@ const contacts = [
     {
         id: 3,
         nombre: 'Alison Maddocks',
-        profilePicture: "src/assets/avatars/avatar-3.jpg",
+        profilePicture: avatar3,
         isVerified: true,
         isBusinessAcc: false,
         isFav: false,
@@ -106,7 +106,7 @@ const contacts = [
     {
         id: 4,
         nombre: 'Ana',
-        profilePicture: "src/assets/avatars/avatar-4.jpg",
+        profilePicture: avatar4,
         isVerified: false,
         isBusinessAcc: true,
         isFav: false,
@@ -124,7 +124,7 @@ const contacts = [
     {
         id: 5,
         nombre: 'Joa Miles',
-        profilePicture: "src/assets/avatars/avatar-5.jpg",
+        profilePicture: avatar5,
         isVerified: true,
         isBusinessAcc: false,
         isFav: true,
@@ -140,7 +140,7 @@ const contacts = [
     {
         id: 6,
         nombre: 'Shirley Schmidt',
-        profilePicture: "src/assets/avatars/avatar-6.jpg",
+        profilePicture: avatar6,
         isVerified: false,
         isBusinessAcc: true,
         isFav: false,
@@ -156,7 +156,7 @@ const contacts = [
     {
         id: 7,
         nombre: 'Carlos',
-        profilePicture: "src/assets/avatars/avatar-7.jpg",
+        profilePicture: avatar7,
         isVerified: false,
         isBusinessAcc: false,
         isFav: false,
@@ -171,7 +171,7 @@ const contacts = [
     {
         id: 8,
         nombre: 'Sofi',
-        profilePicture: "src/assets/avatars/avatar-8.jpg",
+        profilePicture: avatar8,
         isVerified: true,
         isBusinessAcc: false,
         isGroup: false,
@@ -185,7 +185,7 @@ const contacts = [
     {
         id: 9,
         nombre: 'Luah Martinez',
-        profilePicture: "src/assets/avatars/avatar-9.jpg",
+        profilePicture: avatar9,
         isVerified: false,
         isBusinessAcc: false,
         isFav: true,
@@ -204,7 +204,7 @@ const contacts = [
     {
         id: 10,
         nombre: 'Resto XYZ',
-        profilePicture: "src/assets/avatars/WcDonalds.jpg",
+        profilePicture: avatarWc,
         isVerified: true,
         isBusinessAcc: true,
         isFav: true,
@@ -222,7 +222,7 @@ const contacts = [
     {
         id: 11,
         nombre: 'Ernest R',
-        profilePicture: "src/assets/avatars/avatar-10.jpg",
+        profilePicture: avatar10,
         isVerified: false,
         isBusinessAcc: false,
         isFav: false,
