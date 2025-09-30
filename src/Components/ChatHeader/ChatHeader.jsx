@@ -11,7 +11,7 @@ const ChatHeader = ({ ContactData }) => {
     return (
         <nav className='chat-header'>
             <div className='chat-title-container'>
-                <img srcSet={profilePicture} alt="IMG" />
+                <img src={profilePicture} alt="IMG" />
                 <div className='chat-title-wrapper'>
                     <div className='chat-title'>
                         <h2>{nombre}</h2>

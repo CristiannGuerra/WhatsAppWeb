@@ -10,6 +10,28 @@
     gap: 1rem;
 }
 
+.user-avatar-and-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-avatar-and-name img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-avatar-and-name .user-username {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+
 .user-info{
     display: flex;
     justify-content: space-between;

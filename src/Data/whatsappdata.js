@@ -2,7 +2,7 @@ const contacts = [
     {
         id: 1,
         nombre: 'Pedro',
-        profilePicture: "../assets/avatars/avatar-1.jpg",
+        profilePicture: "src/assets/avatars/avatar-1.jpg",
         isVerified: true,
         isBusinessAcc: false,
         isFav: false,
@@ -23,7 +23,7 @@ const contacts = [
                 status: 'visto'
             },
             {
-                emisor: 'YO',
+                emisor: 'USUARIO',
                 hora: '23:12',
                 id: 3,
                 texto: 'Eso que significa :cara_de_nerd:?',
@@ -48,7 +48,7 @@ const contacts = [
     {
         id: 2,
         nombre: 'Maria R Lewis',
-        profilePicture: "https://www.fakepersongenerator.com/Face/female/female20131023546764404.jpg",
+        profilePicture: "src/assets/avatars/avatar-2.jpg",
         isVerified: false,
         isBusinessAcc: true,
         isFav: true,
@@ -88,7 +88,7 @@ const contacts = [
     {
         id: 3,
         nombre: 'Alison Maddocks',
-        profilePicture: "https://www.fakepersongenerator.com/Face/female/female1021912412262.jpg",
+        profilePicture: "src/assets/avatars/avatar-3.jpg",
         isVerified: true,
         isBusinessAcc: false,
         isFav: false,
@@ -104,7 +104,7 @@ const contacts = [
     {
         id: 4,
         nombre: 'Ana',
-        profilePicture: "https://www.fakepersongenerator.com/Face/female/female20061023270372528.jpg",
+        profilePicture: "src/assets/avatars/avatar-4.jpg",
         isVerified: false,
         isBusinessAcc: true,
         isFav: false,
@@ -122,7 +122,7 @@ const contacts = [
     {
         id: 5,
         nombre: 'Joa Miles',
-        profilePicture: "https://www.fakepersongenerator.com/Face/male/male1085780939453.jpg",
+        profilePicture: "src/assets/avatars/avatar-5.jpg",
         isVerified: true,
         isBusinessAcc: false,
         isFav: true,
@@ -138,7 +138,7 @@ const contacts = [
     {
         id: 6,
         nombre: 'Shirley Schmidt',
-        profilePicture: "https://www.fakepersongenerator.com/Face/female/female20151024468249970.jpg",
+        profilePicture: "src/assets/avatars/avatar-6.jpg",
         isVerified: false,
         isBusinessAcc: true,
         isFav: false,
@@ -154,7 +154,7 @@ const contacts = [
     {
         id: 7,
         nombre: 'Carlos',
-        profilePicture: "https://www.fakepersongenerator.com/Face/male/male1085490227112.jpg",
+        profilePicture: "src/assets/avatars/avatar-7.jpg",
         isVerified: false,
         isBusinessAcc: false,
         isFav: false,
@@ -169,7 +169,7 @@ const contacts = [
     {
         id: 8,
         nombre: 'Sofi',
-        profilePicture: "https://www.fakepersongenerator.com/Face/female/female20121023474609375.jpg",
+        profilePicture: "src/assets/avatars/avatar-8.jpg",
         isVerified: true,
         isBusinessAcc: false,
         isGroup: false,
@@ -183,7 +183,7 @@ const contacts = [
     {
         id: 9,
         nombre: 'Luah Martinez',
-        profilePicture: "https://www.fakepersongenerator.com/Face/female/female20171026069623688.jpg",
+        profilePicture: "src/assets/avatars/avatar-9.jpg",
         isVerified: false,
         isBusinessAcc: false,
         isFav: true,
@@ -202,7 +202,7 @@ const contacts = [
     {
         id: 10,
         nombre: 'Resto XYZ',
-        profilePicture: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.dexerto.com%2Fcdn-image%2Fwp-content%2Fuploads%2F2024%2F02%2F22%2FWcDonalds-2-1024x576.jpg%3Fwidth%3D3840%26quality%3D75%26format%3Dauto&f=1&nofb=1&ipt=8c64c51cf15fa40c94242b748ea72647d96b9707e640309106193f16f91b9764&ipo=images",
+        profilePicture: "src/assets/avatars/WcDonalds.jpg",
         isVerified: true,
         isBusinessAcc: true,
         isFav: true,
@@ -220,7 +220,7 @@ const contacts = [
     {
         id: 11,
         nombre: 'Ernest R',
-        profilePicture: "https://www.fakepersongenerator.com/Face/male/male1085828811035.jpg",
+        profilePicture: "src/assets/avatars/avatar-10.jpg",
         isVerified: false,
         isBusinessAcc: false,
         isFav: false,

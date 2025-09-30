@@ -28,7 +28,7 @@ const ChatScreen = () => {
           ?
           <div className="cover">
             <div className="cover-content">
-              <img src={coverImg} alt="" srcset="" />
+              <img src={coverImg} />
               <h1>Download WhatsApp for Windows</h1>
               <div>
                 Make calls, share your screen and get a faster experience when you download the Windows app.

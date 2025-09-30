@@ -14,7 +14,7 @@ const MobileChatHeader = () => {
   const { contact_id } = useParams()
   const contactFound = getContactById(contact_id)
 
-  const { nombre, profilePicture } = contactFound
+  const { nombre, profilePicture, isVerified } = contactFound
 
   const navigate = useNavigate()
 
@@ -30,8 +30,12 @@ const MobileChatHeader = () => {
       <MdArrowBack onClick={handleGoBack} />
       <div className='user-info'>
         <div className='user-avatar-and-name'>
-          <img srcSet={profilePicture} alt="IMG" className='user-avatar' />
-          <div className='user-username'>{nombre}</div>
+          <img src={profilePicture} alt="IMG" className='user-avatar' />
+          <div className='user-username'>
+            <span>{nombre}</span>
+            {isVerified && <MdVerified className='verified-profile' />}
+
+          </div>
         </div>
         <div className='user-actions'>
           <HiMiniVideoCamera />
